@@ -1,10 +1,9 @@
 publiccodeYmlVersion: "0.1"
-
-name: "PetStoreBundle"
-url: "https://github.com/CommonGateway/PetStoreBundle"
+name: "KlantenBundle"
+url: "https://github.com/CommonGateway/KlantenBundle"
 releaseDate: "2022-10-01"
-
 softwareType: addon
+
 platforms:
   - web
   
@@ -13,9 +12,8 @@ categories:
   - it-development
   
 developmentStatus: beta
-
 description:
   nl:
-    shortDescription: "Een symfony bundel als voorbeeld."
+    shortDescription: "KlantenBundle"
   en:
-    shortDescription: "A symfony bundle as example."
+    shortDescription: "KlantenBundle"
