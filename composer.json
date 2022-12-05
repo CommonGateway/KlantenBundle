@@ -1,5 +1,5 @@
 {
-    "name": "common-gateway/pet-store-bundle",
+    "name": "common-gateway/klanten-bundle",
     "description": "An example package for creating symfony flex bundles as plugins",
     "type": "symfony-bundle",
     "keywords": [
@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "CommonGateway\\PetStoreBundle\\": ""
+            "CommonGateway\\KlantenBundle\\": ""
         }
     },
     "scripts": {
