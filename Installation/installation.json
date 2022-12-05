@@ -1,0 +1,3 @@
+{
+    "installationService": "CommonGateway\\PetStoreBundle\\Service\\InstallationService"
+}
