@@ -1,13 +1,13 @@
 <?php
 
-namespace CommonGateway\PetStoreBundle\DependencyInjection;
+namespace CommonGateway\KlantenBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
-class PetStoreExtension extends Extension
+class KlantenExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)
     {

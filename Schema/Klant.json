@@ -1,0 +1,91 @@
+{
+    "$id": "https://klantenBundle.commonground.nu/klant.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1",
+    "title": "Klant",
+    "type": "object",
+    "properties": {
+      "url": {
+        "type": "string",
+        "description": "URL-referentie naar dit object. Dit is de unieke identificatie en locatie van dit object",
+        "nullable": true,
+        "format": "uri"
+      },
+      "bronorganisatie": {
+        "type": "string",
+        "description": "Het RSIN van de Niet-natuurlijk persoon zijnde de organisatie die de klant heeft gecreeerd. Dit moet een geldig RSIN zijn van 9 nummers en voldoen aan https://nl.wikipedia.org/wiki/Burgerservicenummer#11-proef",
+        "required": true
+      },
+      "klantnummer": {
+        "type": "string",
+        "description": "De unieke identificatie van de klant binnen de bronorganisatie.",
+        "required": true
+      },
+      "bedrijfsnaam": {
+        "type": "string",
+        "description": "De bedrijfsnaam van de klant.",
+        "nullable": true
+      },
+      "functie": {
+        "type": "string",
+        "description": "De functie van de klant.",
+        "nullable": true
+      },
+      "websiteUrl": {
+        "type": "string",
+        "description": "Het label of etiket dat aan de specifieke informatiebron, zoals een webpagina, een bestand of een plaatje op internet is toegewezen waar de KLANT in de regel op het internet vindbaar is.",
+        "required": true,
+        "format": "uri"
+      },
+      "voornaam": {
+        "type": "string",
+        "description": "De voornaam, voorletters of roepnaam van de klant.",
+        "nullable": true
+      },
+      "voorvoegselAchternaam": {
+        "type": "string",
+        "description": "Het voorvoegsel van de achternaam van de klant.",
+        "nullable": true
+      },
+      "achternaam": {
+        "type": "string",
+        "description": "De achternaam van de klant.",
+        "nullable": true
+      },
+      "telefoonnummers": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/KlantTelefoon"
+        },
+        "nullable": true
+      },
+      "emails": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/KlantEmail"
+        },
+        "nullable": true
+      },
+      "adressen": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/KlantAdres"
+        },
+        "nullable": true
+      },
+      "subject": {
+        "type": "string",
+        "description": "URL-referentie naar een subject",
+        "nullable": true,
+        "format": "uri"
+      },
+      "subjectType": {
+        "type": "string",
+        "description": "Type van de `subject`.\n\nUitleg bij mogelijke waarden:\n\n* `natuurlijk_persoon` - Natuurlijk persoon\n* `niet_natuurlijk_persoon` - Niet-natuurlijk persoon\n* `vestiging` - Vestiging",
+        "nullable": true
+      },
+      "subjectIdentificatie": {
+        "$ref": "#/definitions/NatuurlijkPersoon"
+      }
+    }
+}
