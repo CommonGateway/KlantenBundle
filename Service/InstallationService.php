@@ -1,7 +1,7 @@
 <?php
 
 // src/Service/InstallationService.php
-namespace CommonGateway\PetStoreBundle\Service;
+namespace CommonGateway\KlantenBundle\Service;
 
 use App\Entity\DashboardCard;
 use App\Entity\Endpoint;
@@ -51,7 +51,7 @@ class InstallationService implements InstallerInterface
     {
 
         // Lets create some genneric dashboard cards
-        $objectsThatShouldHaveCards = ['https://opencatalogi.nl/example.schema.json'];
+        $objectsThatShouldHaveCards = ['https://klantenBundle.commonground.nu/klant.schema.json'];
 
         foreach ($objectsThatShouldHaveCards as $object) {
             (isset($this->io) ? $this->io->writeln('Looking for a dashboard card for: ' . $object) : '');
@@ -75,7 +75,7 @@ class InstallationService implements InstallerInterface
         }
 
         // Let create some endpoints
-        $objectsThatShouldHaveEndpoints = ['https://opencatalogi.nl/example.schema.json'];
+        $objectsThatShouldHaveEndpoints = ['https://klantenBundle.commonground.nu/klant.schema.json'];
 
         foreach ($objectsThatShouldHaveEndpoints as $object) {
             (isset($this->io) ? $this->io->writeln('Looking for a endpoint for: ' . $object) : '');
