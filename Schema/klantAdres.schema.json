@@ -1,0 +1,43 @@
+{
+  "$id": "https://klantenBundle.commonground.nu/klantAdres.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "0.1",
+  "title": "KlantAdres",
+  "type": "object",
+  "properties": {
+    "naam": {
+      "type": "string",
+      "description": "De naam van dit adres, b.v. thuis",
+      "nullable": true
+    },
+    "straatnaam": {
+      "type": "string",
+      "nullable": true
+    },
+    "huisnummer": {
+      "type": "integer",
+      "nullable": true
+    },
+    "huisletter": {
+      "type": "string",
+      "nullable": true
+    },
+    "huisnummertoevoeging": {
+      "type": "string",
+      "nullable": true
+    },
+    "postcode": {
+      "type": "string",
+      "nullable": true
+    },
+    "woonplaatsnaam": {
+      "type": "string",
+      "nullable": true
+    },
+    "landcode": {
+      "type": "string",
+      "description": "De code, behorende bij de landnaam, zoals opgenomen in de Land/Gebied-tabel van de BRP.",
+      "nullable": true
+    }
+  }
+}

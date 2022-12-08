@@ -1,0 +1,43 @@
+{
+  "$id": "https://klantenBundle.commonground.nu/verblijfAdres.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "0.1",
+  "title": "VerblijfAdres",
+  "type": "object",
+  "properties": {
+    "aoaIdentificatie": {
+      "type": "string",
+      "description": "De unieke identificatie van het OBJECT",
+      "required": true
+    },
+    "wplWoonplaatsNaam": {
+      "type": "string",
+      "nullable": true
+    },
+    "gorOpenbareRuimteNaam": {
+      "type": "integer",
+      "description": "Een door het bevoegde gemeentelijke orgaan aan een OPENBARE RUIMTE toegekende benaming",
+      "required": true
+    },
+    "aoaPostcode": {
+      "type": "string",
+      "nullable": true
+    },
+    "aoaHuisnummer": {
+      "type": "string",
+      "nullable": true
+    },
+    "aoaHuisletter": {
+      "type": "string",
+      "nullable": true
+    },
+    "aoaHuisnummertoevoeging": {
+      "type": "string",
+      "nullable": true
+    },
+    "inpLocatiebeschrijving": {
+      "type": "string",
+      "nullable": true
+    }
+  }
+}
