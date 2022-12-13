@@ -1,0 +1,46 @@
+{
+  "$id": "https://klantenBundle.commonground.nu/klantContactmoment.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "0.1",
+  "title": "KlantContactmoment",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string",
+      "description": "URL-referentie naar dit object. Dit is de unieke identificatie en locatie van dit object",
+      "nullable": true,
+      "format": "uri",
+      "minLength": 1,
+      "maxLength": 1000
+    },
+    "contactmoment": {
+      "$ref": "#/definitions/Contactmoment",
+      "required": true
+    },
+    "klant": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL-referentie naar de KLANT.",
+      "required": true,
+      "minLength": 1,
+      "maxLength": 1000
+    },
+    "rol": {
+      "type": "string",
+      "enum": [
+        "belanghebbende",
+        "gesprekspartner"
+      ],
+      "description": "De rol van de KLANT in het CONTACTMOMENT. Indien de KLANT zowel gesprekspartner als belanghebbende is, dan worden er twee KLANTCONTACTMOMENTen aangemaakt.",
+      "required": true
+    },
+    "gesprek": {
+      "type": "string"
+    },
+    "todo": {
+      "type": "string",
+      "format": "uri",
+      "description": "uri to agendaservice todo"
+    }
+  }
+}
