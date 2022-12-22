@@ -51,10 +51,10 @@
       "nullable": true
     },
     "verblijfsadres": {
-      "$ref": "#/definitions/VerblijfAdres"
+      "$ref": "https://klantenBundle.commonground.nu/verblijfAdres.schema.json"
     },
     "subVerblijfBuitenland": {
-      "$ref": "#/definitions/SubVerblijfBuitenland"
+      "$ref": "https://klantenBundle.commonground.nu/subVerblijfBuitenland.schema.json"
     }
   }
 }

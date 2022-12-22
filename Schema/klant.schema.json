@@ -55,21 +55,21 @@
     "telefoonnummers": {
       "type": "array",
       "items": {
-        "$ref": "#/definitions/KlantTelefoon"
+        "$ref": "https://klantenBundle.commonground.nu/klantTelefoon.schema.json"
       },
       "nullable": true
     },
     "emails": {
       "type": "array",
       "items": {
-        "$ref": "#/definitions/KlantEmail"
+        "$ref": "https://klantenBundle.commonground.nu/klantEmail.schema.json"
       },
       "nullable": true
     },
     "adressen": {
       "type": "array",
       "items": {
-        "$ref": "#/definitions/KlantAdres"
+        "$ref": "https://klantenBundle.commonground.nu/klantAdres.schema.json"
       },
       "nullable": true
     },
@@ -85,7 +85,7 @@
       "nullable": true
     },
     "subjectIdentificatie": {
-      "$ref": "#/definitions/NatuurlijkPersoon"
+      "$ref": "https://klantenBundle.commonground.nu/natuurlijkPersoon.schema.json"
     }
   }
 }
