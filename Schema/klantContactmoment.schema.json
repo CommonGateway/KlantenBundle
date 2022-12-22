@@ -14,7 +14,7 @@
       "maxLength": 1000
     },
     "contactmoment": {
-      "$ref": "#/definitions/Contactmoment",
+      "$ref": "https://klantenBundle.commonground.nu/contactmoment.schema.json",
       "required": true
     },
     "klant": {

@@ -12,10 +12,10 @@
       "format": "uri"
     },
     "vorigContactmoment": {
-      "$ref": "#/definitions/Contactmoment"
+      "$ref": "https://klantenBundle.commonground.nu/contactmoment.schema.json"
     },
     "volgendContactmoment": {
-      "$ref": "#/definitions/Contactmoment"
+      "$ref": "https://klantenBundle.commonground.nu/contactmoment.schema.json"
     },
     "bronorganisatie": {
       "type": "string",
@@ -82,12 +82,12 @@
       "maxLength": 1000
     },
     "medewerkerIdentificatie": {
-      "$ref": "#/definitions/MedewerkerIdentificatie"
+      "$ref": "https://klantenBundle.commonground.nu/medewerkerIdentificatie.schema.json"
     },
     "objectcontactmomenten": {
       "type": "array",
       "items": {
-        "$ref": "#/definitions/ObjectContactmoment"
+        "$ref": "https://klantenBundle.commonground.nu/objectContactmoment.schema.json"
       }
     },
     "afwijkendOnderwerp": {
@@ -97,7 +97,7 @@
     "klantcontactmomenten": {
       "type": "array",
       "items": {
-        "$ref": "#/definitions/KlantContactmoment"
+        "$ref": "https://klantenBundle.commonground.nu/klantContactmoment.schema.json"
       }
     },
     "primaireVraag": {
