@@ -1,5 +1,5 @@
 {
-  "$id": "https://klantenBundle.commonground.nu/contactmoment.schema.json",
+  "$id": "https://klantenBundle.commonground.nu/klant.contactmoment.schema.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.1",
   "title": "Contactmoment",
@@ -12,10 +12,10 @@
       "format": "uri"
     },
     "vorigContactmoment": {
-      "$ref": "https://klantenBundle.commonground.nu/contactmoment.schema.json"
+      "$ref": "https://klantenBundle.commonground.nu/klant.contactmoment.schema.json"
     },
     "volgendContactmoment": {
-      "$ref": "https://klantenBundle.commonground.nu/contactmoment.schema.json"
+      "$ref": "https://klantenBundle.commonground.nu/klant.contactmoment.schema.json"
     },
     "bronorganisatie": {
       "type": "string",
@@ -82,12 +82,12 @@
       "maxLength": 1000
     },
     "medewerkerIdentificatie": {
-      "$ref": "https://klantenBundle.commonground.nu/medewerkerIdentificatie.schema.json"
+      "$ref": "https://klantenBundle.commonground.nu/klant.medewerkerIdentificatie.schema.json"
     },
     "objectcontactmomenten": {
       "type": "array",
       "items": {
-        "$ref": "https://klantenBundle.commonground.nu/objectContactmoment.schema.json"
+        "$ref": "https://klantenBundle.commonground.nu/klant.objectContactmoment.schema.json"
       }
     },
     "afwijkendOnderwerp": {
@@ -97,7 +97,7 @@
     "klantcontactmomenten": {
       "type": "array",
       "items": {
-        "$ref": "https://klantenBundle.commonground.nu/klantContactmoment.schema.json"
+        "$ref": "https://klantenBundle.commonground.nu/klant.klantContactmoment.schema.json"
       }
     },
     "primaireVraag": {

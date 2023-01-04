@@ -1,5 +1,5 @@
 {
-  "$id": "https://klantenBundle.commonground.nu/natuurlijkPersoon.schema.json",
+  "$id": "https://klantenBundle.commonground.nu/klant.natuurlijkPersoon.schema.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.1",
   "title": "NatuurlijkPersoon",
@@ -51,10 +51,10 @@
       "nullable": true
     },
     "verblijfsadres": {
-      "$ref": "https://klantenBundle.commonground.nu/verblijfAdres.schema.json"
+      "$ref": "https://klantenBundle.commonground.nu/klant.verblijfAdres.schema.json"
     },
     "subVerblijfBuitenland": {
-      "$ref": "https://klantenBundle.commonground.nu/subVerblijfBuitenland.schema.json"
+      "$ref": "https://klantenBundle.commonground.nu/klant.subVerblijfBuitenland.schema.json"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "$id": "https://klantenBundle.commonground.nu/subVerblijfBuitenland.schema.json",
+  "$id": "https://klantenBundle.commonground.nu/klant.subVerblijfBuitenland.schema.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.1",
   "title": "SubVerblijfBuitenland",

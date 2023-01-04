@@ -1,20 +1,19 @@
 {
-  "$id": "https://klantenBundle.commonground.nu/klantEmail.schema.json",
+  "$id": "https://klantenBundle.commonground.nu/klant.klantTelefoon.schema.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.1",
-  "title": "KlantEmail",
+  "title": "KlantTelefoon",
   "type": "object",
   "properties": {
     "naam": {
       "type": "string",
-      "description": "De naam van dit email",
+      "description": "De naam van dit telefoonnummer",
       "nullable": true
     },
     "telefoonnummer": {
       "type": "string",
-      "description": "Het email adres",
-      "required": true,
-      "format": "email"
+      "description": "Het telefoonnummer",
+      "required": true
     }
   }
 }

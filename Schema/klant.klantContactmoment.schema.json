@@ -1,5 +1,5 @@
 {
-  "$id": "https://klantenBundle.commonground.nu/klantContactmoment.schema.json",
+  "$id": "https://klantenBundle.commonground.nu/klant.klantContactmoment.schema.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.1",
   "title": "KlantContactmoment",
@@ -14,16 +14,12 @@
       "maxLength": 1000
     },
     "contactmoment": {
-      "$ref": "https://klantenBundle.commonground.nu/contactmoment.schema.json",
+      "$ref": "https://klantenBundle.commonground.nu/klant.contactmoment.schema.json",
       "required": true
     },
     "klant": {
-      "type": "string",
-      "format": "uri",
-      "description": "URL-referentie naar de KLANT.",
-      "required": true,
-      "minLength": 1,
-      "maxLength": 1000
+      "$ref": "https://klantenBundle.commonground.nu/klant.klant.schema.json",
+      "required": true
     },
     "rol": {
       "type": "string",

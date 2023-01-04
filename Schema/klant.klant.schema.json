@@ -1,5 +1,5 @@
 {
-  "$id": "https://klantenBundle.commonground.nu/klant.schema.json",
+  "$id": "https://klantenBundle.commonground.nu/klant.klant.schema.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "0.1",
   "title": "Klant",
@@ -55,21 +55,21 @@
     "telefoonnummers": {
       "type": "array",
       "items": {
-        "$ref": "https://klantenBundle.commonground.nu/klantTelefoon.schema.json"
+        "$ref": "https://klantenBundle.commonground.nu/klant.klantTelefoon.schema.json"
       },
       "nullable": true
     },
     "emails": {
       "type": "array",
       "items": {
-        "$ref": "https://klantenBundle.commonground.nu/klantEmail.schema.json"
+        "$ref": "https://klantenBundle.commonground.nu/klant.klantEmail.schema.json"
       },
       "nullable": true
     },
     "adressen": {
       "type": "array",
       "items": {
-        "$ref": "https://klantenBundle.commonground.nu/klantAdres.schema.json"
+        "$ref": "https://klantenBundle.commonground.nu/klant.klantAdres.schema.json"
       },
       "nullable": true
     },
@@ -85,7 +85,7 @@
       "nullable": true
     },
     "subjectIdentificatie": {
-      "$ref": "https://klantenBundle.commonground.nu/natuurlijkPersoon.schema.json"
+      "$ref": "https://klantenBundle.commonground.nu/klant.natuurlijkPersoon.schema.json"
     }
   }
 }
