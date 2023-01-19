@@ -40,6 +40,11 @@
       "type": "string",
       "description": "Url verwijzing naar referentielijsten api."
     },
+    "gespreksId": {
+      "type": "string",
+      "format": "uud",
+      "default": "{{ generated_uuid }}"
+    },
     "kanaal": {
       "type": "string",
       "description": "Het communicatiekanaal waarlangs het CONTACTMOMENT gevoerd wordt",
