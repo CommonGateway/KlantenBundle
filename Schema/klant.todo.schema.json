@@ -1,0 +1,131 @@
+{
+  "$id": "https://klantenBundle.commonground.nu/klant.todo.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "0.1",
+  "title": "Todo",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of this RequestType.",
+      "nullable": true
+    },
+    "description": {
+      "type": "string",
+      "description": "An short description of this Event.",
+      "nullable": true
+    },
+    "startDate": {
+      "type": "string",
+      "description": "The moment this event starts.",
+      "nullable": true,
+      "format": "date-time"
+    },
+    "endDate": {
+      "type": "string",
+      "description": "The moment this event ends.",
+      "nullable": true,
+      "format": "date-time"
+    },
+    "location": {
+      "type": "string",
+      "description": "The location of this event.",
+      "nullable": true
+    },
+    "class": {
+      "type": "string",
+      "description": "The security class of this event.",
+      "nullable": true
+    },
+    "geo": {
+      "type": "string",
+      "description": "The coordinates of this event.",
+      "nullable": true
+    },
+    "organiser": {
+      "type": "string",
+      "description": "The organiser of this event linked to with an url.",
+      "nullable": true
+    },
+    "status": {
+      "type": "string",
+      "description": "The status of this event.",
+      "nullable": true
+    },
+    "summary": {
+      "type": "string",
+      "description": "The summary of this event.",
+      "nullable": true
+    },
+    "duration": {
+      "type": "string",
+      "description": "The duration of this event.",
+      "nullable": true,
+      "format": "duration"
+    },
+    "contact": {
+      "type": "string",
+      "description": "Url of this person.",
+      "nullable": true
+    },
+    "seq": {
+      "type": "integer",
+      "description": "The version number of this event.",
+      "nullable": true
+    },
+    "priority": {
+      "type": "integer",
+      "description": "The priority of this event ranging from 1 (high) to 9 (low).",
+      "nullable": true
+    },
+    "attendees": {
+      "type": "array",
+      "description": "The urls of the attendees of this event.",
+      "nullable": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "attachments": {
+      "type": "array",
+      "description": "The urls of the attachments of this event.",
+      "nullable": true,
+      "items": {
+        "type": "string"
+      },
+      "readOnly": true
+    },
+    "categories": {
+      "type": "array",
+      "description": "The urls of the catergories this event belongs to.",
+      "nullable": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "comments": {
+      "type": "array",
+      "description": "The urls of the comments that belong to this event.",
+      "nullable": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "completed": {
+      "type": "string",
+      "description": "The date and time a to-do is completed.",
+      "nullable": true,
+      "format": "date-time"
+    },
+    "percentageDone": {
+      "type": "integer",
+      "description": "The percentage of a to-do that has been comepleted.",
+      "nullable": true
+    },
+    "resource": {
+      "type": "string",
+      "description": "A specific commonground resource.",
+      "nullable": true
+    }
+  }
+}
