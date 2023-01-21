@@ -8,36 +8,47 @@
     "aoaIdentificatie": {
       "type": "string",
       "description": "De unieke identificatie van het OBJECT",
-      "required": true
+      "required": true,
+      "maxLength": 100,
+      "minLength": 1
     },
     "wplWoonplaatsNaam": {
       "type": "string",
-      "nullable": true
+      "nullable": true,
+      "maxLength": 80
     },
     "gorOpenbareRuimteNaam": {
       "type": "integer",
       "description": "Een door het bevoegde gemeentelijke orgaan aan een OPENBARE RUIMTE toegekende benaming",
-      "required": true
+      "required": true,
+      "maxLength": 80,
+      "minLength": 1
     },
     "aoaPostcode": {
       "type": "string",
-      "nullable": true
+      "nullable": true,
+      "maxLength": 7
     },
     "aoaHuisnummer": {
       "type": "string",
-      "nullable": true
+      "nullable": true,
+      "maximum": 99999,
+      "minimum": 0
     },
     "aoaHuisletter": {
       "type": "string",
-      "nullable": true
+      "nullable": true,
+      "maxLength": 1
     },
     "aoaHuisnummertoevoeging": {
       "type": "string",
-      "nullable": true
+      "nullable": true,
+      "maxLength": 4
     },
     "inpLocatiebeschrijving": {
       "type": "string",
-      "nullable": true
+      "nullable": true,
+      "maxLength": 1000
     }
   }
 }
