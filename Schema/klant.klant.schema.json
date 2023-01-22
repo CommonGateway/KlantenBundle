@@ -85,7 +85,7 @@
       "nullable": true
     },
     "subjectIdentificatie": {
-      "$ref": "https://klantenBundle.commonground.nu/klant.natuurlijkPersoon.schema.json"
+      "$ref": "https://klantenBundle.commonground.nu/klant.subjectIdentificatie.schema.json"
     }
   }
 }

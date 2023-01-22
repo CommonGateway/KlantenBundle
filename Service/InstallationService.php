@@ -16,21 +16,19 @@ class InstallationService implements InstallerInterface
     private EntityManagerInterface $entityManager;
     private SymfonyStyle $io;
 
-    public const OBJECTS_THAT_SHOULD_HAVE_CARDS = [
-    ];
-    //
+    public const OBJECTS_THAT_SHOULD_HAVE_CARDS = [];
 
     public const SCHEMAS_THAT_SHOULD_HAVE_ENDPOINTS = [
-        ['reference' => 'https://klantenBundle.commonground.nu/klant.klant.schema.json',                 'path' => '/klanten',                    'methods' => []],
-        ['reference' => 'https://klantenBundle.commonground.nu/klant.klantAdres.schema.json',                 'path' => '/adressen',                      'methods' => []],
-        ['reference' => 'https://klantenBundle.commonground.nu/klant.contactmoment.schema.json',                 'path' => '/contactmomenten',                    'methods' => []],
-        ['reference' => 'https://klantenBundle.commonground.nu/klant.klantContactmoment.schema.json',                 'path' => '/klantcontactmomenten',                    'methods' => []],
-        ['reference' => 'https://klantenBundle.commonground.nu/klant.objectContactmoment.schema.json',                 'path' => '/objectcontactmomenten',                    'methods' => []],
-        ['reference' => 'https://klantenBundle.commonground.nu/klant.klantEmail.schema.json',                 'path' => '/emails',                    'methods' => []],
-        ['reference' => 'https://klantenBundle.commonground.nu/klant.klantTelefoon.schema.json',                 'path' => '/telefoons',                    'methods' => []],
-        ['reference' => 'https://klantenBundle.commonground.nu/klant.natuurlijkPersoon.schema.json',                 'path' => '/natuurlijkpersonen',                    'methods' => []],
-        ['reference' => 'https://klantenBundle.commonground.nu/klant.verblijfAdres.schema.json',                 'path' => '/verblijfadressen',                    'methods' => []],
-        ['reference' => 'https://klantenBundle.commonground.nu/klant.subVerblijfBuitenland.schema.json',                 'path' => '/subverblijfadressen',                    'methods' => []],
+        ['reference' => 'https://klantenBundle.commonground.nu/klant.klant.schema.json',                 'path' => 'klanten',                  'methods' => []],
+        ['reference' => 'https://klantenBundle.commonground.nu/klant.klantAdres.schema.json',            'path' => 'adressen',                 'methods' => []],
+        ['reference' => 'https://klantenBundle.commonground.nu/klant.contactmoment.schema.json',         'path' => 'contactmomenten',          'methods' => []],
+        ['reference' => 'https://klantenBundle.commonground.nu/klant.klantContactmoment.schema.json',    'path' => 'klantcontactmomenten',     'methods' => []],
+        ['reference' => 'https://klantenBundle.commonground.nu/klant.objectContactmoment.schema.json',   'path' => 'objectcontactmomenten',    'methods' => []],
+        ['reference' => 'https://klantenBundle.commonground.nu/klant.klantEmail.schema.json',            'path' => 'emails',                   'methods' => []],
+        ['reference' => 'https://klantenBundle.commonground.nu/klant.klantTelefoon.schema.json',         'path' => 'telefoons',                'methods' => []],
+        ['reference' => 'https://klantenBundle.commonground.nu/klant.subjectIdentificatie.schema.json',  'path' => 'subjectidentificaties',    'methods' => []],
+        ['reference' => 'https://klantenBundle.commonground.nu/klant.verblijfAdres.schema.json',         'path' => 'verblijfadressen',         'methods' => []],
+        ['reference' => 'https://klantenBundle.commonground.nu/klant.subVerblijfBuitenland.schema.json', 'path' => 'subverblijfadressen',      'methods' => []],
     ];
 
     public function __construct(EntityManagerInterface $entityManager)
@@ -73,7 +71,7 @@ class InstallationService implements InstallerInterface
         foreach($objectsThatShouldHaveEndpoints as $objectThatShouldHaveEndpoint) {
             $entity = $this->entityManager->getRepository('App:Entity')->findOneBy(['reference' => $objectThatShouldHaveEndpoint['reference']]);
             if (!$endpointRepository->findOneBy(['name' => $entity->getName()])) {
-                $endpoint = new Endpoint($entity, $objectThatShouldHaveEndpoint['path'], $objectThatShouldHaveEndpoint['methods']);
+                $endpoint = new Endpoint($entity, null, $objectThatShouldHaveEndpoint);
 
                 $this->entityManager->persist($endpoint);
                 $this->entityManager->flush();

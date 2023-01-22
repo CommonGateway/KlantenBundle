@@ -1,7 +1,7 @@
 {
   "$id": "https://klantenBundle.commonground.nu/klant.klantContactmoment.schema.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "version": "0.1",
+  "version": "0.2",
   "title": "KlantContactmoment",
   "type": "object",
   "properties": {
@@ -32,11 +32,6 @@
     },
     "gesprek": {
       "type": "string"
-    },
-    "todo": {
-      "type": "string",
-      "format": "uri",
-      "description": "uri to agendaservice todo"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "$id": "https://klantenBundle.commonground.nu/klant.contactmoment.schema.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "version": "0.1",
+  "version": "0.2",
   "title": "Contactmoment",
   "type": "object",
   "properties": {
@@ -43,7 +43,7 @@
     "gespreksId": {
       "type": "string",
       "format": "uud",
-      "default": "{{ generated_uuid }}"
+      "default": "{{ generated_uuid() }}"
     },
     "kanaal": {
       "type": "string",
@@ -110,6 +110,9 @@
     },
     "primaireVraagWeergave": {
       "type": "string"
+    },
+    "todo": {
+      "$ref": "https://klantenBundle.commonground.nu/klant.todo.schema.json"
     }
   }
 }
