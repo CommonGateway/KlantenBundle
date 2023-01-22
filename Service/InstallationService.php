@@ -17,9 +17,6 @@ class InstallationService implements InstallerInterface
     private SymfonyStyle $io;
 
     public const OBJECTS_THAT_SHOULD_HAVE_CARDS = [
-        'https://klantenBundle.commonground.nu/klant.klant.schema.json',
-        'https://klantenBundle.commonground.nu/klant.contactmoment.schema.json',
-        'https://klantenBundle.commonground.nu/klant.natuurlijkPersoon.schema.json'
     ];
     //
 
