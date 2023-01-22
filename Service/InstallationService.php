@@ -16,12 +16,7 @@ class InstallationService implements InstallerInterface
     private EntityManagerInterface $entityManager;
     private SymfonyStyle $io;
 
-    public const OBJECTS_THAT_SHOULD_HAVE_CARDS = [
-        'https://klantenBundle.commonground.nu/klant.klant.schema.json',
-        'https://klantenBundle.commonground.nu/klant.contactmoment.schema.json',
-        'https://klantenBundle.commonground.nu/klant.subjectIdentificatie.schema.json'
-    ];
-    //
+    public const OBJECTS_THAT_SHOULD_HAVE_CARDS = [];
 
     public const SCHEMAS_THAT_SHOULD_HAVE_ENDPOINTS = [
         ['reference' => 'https://klantenBundle.commonground.nu/klant.klant.schema.json',                 'path' => 'klanten',                  'methods' => []],
