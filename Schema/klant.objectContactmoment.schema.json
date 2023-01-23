@@ -15,7 +15,8 @@
     },
     "contactmoment": {
       "$ref": "https://klantenBundle.commonground.nu/klant.contactmoment.schema.json",
-      "required": true
+      "required": true,
+      "inversedBy": "objectcontactmomenten"
     },
     "object": {
       "type": "string",
