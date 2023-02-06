@@ -108,7 +108,9 @@ class InstallationService implements InstallerInterface
     private function createCollections(): array
     {
         $collectionConfigs = [
-            ['name' => 'Klant',  'prefix' => 'klant', 'schemaPrefix' => 'https://klantenBundle.commonground.nu/klant'],
+            // todo: disabled prefixes for now, because we need to change the kiss front-end first
+//            ['name' => 'Klant',  'prefix' => 'klant', 'schemaPrefix' => 'https://klantenBundle.commonground.nu/klant'],
+            ['name' => 'Klant', 'schemaPrefix' => 'https://klantenBundle.commonground.nu/klant'],
         ];
         $collections = [];
         foreach($collectionConfigs as $collectionConfig) {
