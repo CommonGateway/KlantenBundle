@@ -1,11 +1,12 @@
 {
     "installationService": "CommonGateway\\KlantenBundle\\Service\\InstallationService",
     "collections": [{
-        "reference": "https://vng.opencatalogi.nl/collection/Klanten.collection.json",
+        "reference": "https://klantenBundle.commonground.nu/collection/klanten.default.collection.json",
         "schemaPrefix": "https://klantenBundle.commonground.nu/klant"
     }],
     "endpoints": {
-        "schemas": [{
+        "schemas": [
+            {
                 "reference": "https://klantenBundle.commonground.nu/klant.klant.schema.json",
                 "path": "klanten",
                 "methods": []
