@@ -1,0 +1,38 @@
+{
+    "$id": "https://klantenBundle.commonground.nu/klant.objectContactmoment.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+    "version": "0.1",
+    "title": "ObjectContactmoment",
+    "type": "object",
+    "properties": {
+        "url": {
+            "type": "string",
+            "description": "URL-referentie naar dit object. Dit is de unieke identificatie en locatie van dit object",
+            "nullable": true,
+            "format": "uri",
+            "minLength": 1,
+            "maxLength": 1000
+        },
+        "contactmoment": {
+            "$ref": "https://klantenBundle.commonground.nu/klant.contactmoment.schema.json",
+            "required": true,
+            "inversedBy": "objectcontactmomenten"
+        },
+        "object": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL-referentie naar het gerelateerde OBJECT (in een andere API).",
+            "required": true,
+            "minLength": 1,
+            "maxLength": 1000
+        },
+        "objectType": {
+            "type": "string",
+            "enum": [
+                "zaak"
+            ],
+            "description": "Het type van het gerelateerde OBJECT.\n\nUitleg bij mogelijke waarden:\n\nzaak - Zaak",
+            "required": true
+        }
+    }
+}

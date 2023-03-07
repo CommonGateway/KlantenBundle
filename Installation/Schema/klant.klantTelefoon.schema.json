@@ -1,0 +1,19 @@
+{
+    "$id": "https://klantenBundle.commonground.nu/klant.klantTelefoon.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+    "version": "0.1",
+    "title": "KlantTelefoon",
+    "type": "object",
+    "properties": {
+        "naam": {
+            "type": "string",
+            "description": "De naam van dit telefoonnummer",
+            "nullable": true
+        },
+        "telefoonnummer": {
+            "type": "string",
+            "description": "Het telefoonnummer",
+            "required": true
+        }
+    }
+}

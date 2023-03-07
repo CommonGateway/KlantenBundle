@@ -1,3 +1,68 @@
 {
-    "installationService": "CommonGateway\\KlantenBundle\\Service\\InstallationService"
+    "installationService": "CommonGateway\\KlantenBundle\\Service\\InstallationService",
+    "collections": [{
+        "reference": "https://vng.opencatalogi.nl/collection/Klanten.collection.json",
+        "schemaPrefix": "https://vng.opencatalogi.nl/schemas/brc"
+    }],
+    "cards": {
+        "schemas": [{
+                "reference": "https://klantenBundle.commonground.nu/klant.klant.schema.json",
+                "path": "klanten",
+                "methods": []
+            },
+            {
+                "reference": "https://klantenBundle.commonground.nu/klant.klantAdres.schema.json",
+                "path": "adressen",
+                "methods": []
+            },
+            {
+                "reference": "https://klantenBundle.commonground.nu/klant.contactmoment.schema.json",
+                "path": "contactmomenten",
+                "methods": []
+            },
+            {
+                "reference": "https://klantenBundle.commonground.nu/klant.klantContactmoment.schema.json",
+                "path": "klantcontactmomenten",
+                "methods": []
+            },
+            {
+                "reference": "https://klantenBundle.commonground.nu/klant.objectContactmoment.schema.json",
+                "path": "objectcontactmomenten",
+                "methods": []
+            },
+            {
+                "reference": "https://klantenBundle.commonground.nu/klant.klantEmail.schema.json",
+                "path": "emails",
+                "methods": []
+            },
+            {
+                "reference": "https://klantenBundle.commonground.nu/klant.klantTelefoon.schema.json",
+                "path": "telefoons",
+                "methods": []
+            },
+            {
+                "reference": "https://klantenBundle.commonground.nu/klant.subjectIdentificatie.schema.json",
+                "path": "subjectidentificaties",
+                "methods": []
+            },
+            {
+                "reference": "https://klantenBundle.commonground.nu/klant.verblijfAdres.schema.json",
+                "path": "verblijfadressen",
+                "methods": []
+            },
+            {
+                "reference": "https://klantenBundle.commonground.nu/klant.subVerblijfBuitenland.schema.json",
+                "path": "subverblijfadressen",
+                "methods": []
+            }
+        ]
+    },
+    "endpoints": {
+        "schemas": [
+
+        ],
+        "subEndpoints": [
+
+        ]
+    }
 }
