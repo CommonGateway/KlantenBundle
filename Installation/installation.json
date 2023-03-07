@@ -2,9 +2,9 @@
     "installationService": "CommonGateway\\KlantenBundle\\Service\\InstallationService",
     "collections": [{
         "reference": "https://vng.opencatalogi.nl/collection/Klanten.collection.json",
-        "schemaPrefix": "https://vng.opencatalogi.nl/schemas/brc"
+        "schemaPrefix": "https://klantenBundle.commonground.nu/klant"
     }],
-    "cards": {
+    "endpoints": {
         "schemas": [{
                 "reference": "https://klantenBundle.commonground.nu/klant.klant.schema.json",
                 "path": "klanten",
@@ -55,14 +55,6 @@
                 "path": "subverblijfadressen",
                 "methods": []
             }
-        ]
-    },
-    "endpoints": {
-        "schemas": [
-
-        ],
-        "subEndpoints": [
-
         ]
     }
 }
