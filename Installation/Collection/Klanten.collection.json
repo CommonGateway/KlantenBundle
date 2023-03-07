@@ -1,0 +1,8 @@
+{
+    "title": "Klanten",
+    "$id": "https://klantenBundle.commonground.nu/collection/klanten.default.collection.json",
+    "$schema": "https://docs.commongateway.nl/schemas/CollectionEntity.schema.json",
+    "version": "0.0.1",
+    "prefix": null,
+    "plugin": "KissBundle"
+}

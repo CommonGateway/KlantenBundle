@@ -1,0 +1,37 @@
+{
+    "$id": "https://klantenBundle.commonground.nu/klant.klantContactmoment.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+    "version": "0.2",
+    "title": "KlantContactmoment",
+    "type": "object",
+    "properties": {
+        "url": {
+            "type": "string",
+            "description": "URL-referentie naar dit object. Dit is de unieke identificatie en locatie van dit object",
+            "nullable": true,
+            "format": "uri",
+            "minLength": 1,
+            "maxLength": 1000
+        },
+        "contactmoment": {
+            "$ref": "https://klantenBundle.commonground.nu/klant.contactmoment.schema.json",
+            "required": true
+        },
+        "klant": {
+            "$ref": "https://klantenBundle.commonground.nu/klant.klant.schema.json",
+            "required": true
+        },
+        "rol": {
+            "type": "string",
+            "enum": [
+                "belanghebbende",
+                "gesprekspartner"
+            ],
+            "description": "De rol van de KLANT in het CONTACTMOMENT. Indien de KLANT zowel gesprekspartner als belanghebbende is, dan worden er twee KLANTCONTACTMOMENTen aangemaakt.",
+            "required": true
+        },
+        "gesprek": {
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "$id": "https://klantenBundle.commonground.nu/klant.subVerblijfBuitenland.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+    "version": "0.1",
+    "title": "SubVerblijfBuitenland",
+    "type": "object",
+    "properties": {
+        "lndLandcode": {
+            "type": "string",
+            "description": "De code, behorende bij de landnaam, zoals opgenomen in de Land/Gebied-tabel van de BRP.",
+            "required": true,
+            "maxLength": 4,
+            "minLength": 1
+        },
+        "lndLandnaam": {
+            "type": "string",
+            "description": "De naam van het land, zoals opgenomen in de Land/Gebied-tabel van de BRP.",
+            "required": true,
+            "maxLength": 40,
+            "minLength": 1
+        },
+        "subAdresBuitenland1": {
+            "type": "integer",
+            "nullable": true,
+            "maxLength": 35
+        },
+        "subAdresBuitenland2": {
+            "type": "string",
+            "nullable": true,
+            "maxLength": 35
+        },
+        "subAdresBuitenland3": {
+            "type": "string",
+            "nullable": true,
+            "maxLength": 35
+        }
+    }
+}
