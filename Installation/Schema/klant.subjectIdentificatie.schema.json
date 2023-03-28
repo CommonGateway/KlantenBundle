@@ -7,7 +7,7 @@
     "properties": {
         "inpBsn": {
             "id": {
-                "type": "integer",
+                "type": "string",
                 "format": "uuid",
                 "nullable": true
             },
