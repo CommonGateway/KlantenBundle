@@ -5,6 +5,11 @@
     "title": "Todo",
     "type": "object",
     "properties": {
+        "id": {
+            "type": "integer",
+            "format": "uuid",
+            "nullable": true
+        },
         "name": {
             "type": "string",
             "description": "The name of this RequestType.",

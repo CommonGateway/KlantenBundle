@@ -5,6 +5,11 @@
     "title": "ObjectContactmoment",
     "type": "object",
     "properties": {
+        "id": {
+            "type": "integer",
+            "format": "uuid",
+            "nullable": true
+        },
         "url": {
             "type": "string",
             "description": "URL-referentie naar dit object. Dit is de unieke identificatie en locatie van dit object",

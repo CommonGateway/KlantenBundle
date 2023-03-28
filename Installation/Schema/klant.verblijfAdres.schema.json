@@ -5,6 +5,11 @@
     "title": "VerblijfAdres",
     "type": "object",
     "properties": {
+        "id": {
+            "type": "integer",
+            "format": "uuid",
+            "nullable": true
+        },
         "aoaIdentificatie": {
             "type": "string",
             "description": "De unieke identificatie van het OBJECT",

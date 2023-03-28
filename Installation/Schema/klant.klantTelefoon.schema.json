@@ -5,6 +5,11 @@
     "title": "KlantTelefoon",
     "type": "object",
     "properties": {
+        "id": {
+            "type": "integer",
+            "format": "uuid",
+            "nullable": true
+        },
         "naam": {
             "type": "string",
             "description": "De naam van dit telefoonnummer",
