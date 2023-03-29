@@ -5,6 +5,11 @@
     "title": "MedewerkerIdentificatie",
     "type": "object",
     "properties": {
+        "id": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+        },
         "identificatie": {
             "type": "string",
             "description": "Een korte unieke aanduiding van de MEDEWERKER.",

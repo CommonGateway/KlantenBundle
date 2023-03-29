@@ -5,6 +5,11 @@
     "title": "SubVerblijfBuitenland",
     "type": "object",
     "properties": {
+        "id": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+        },
         "lndLandcode": {
             "type": "string",
             "description": "De code, behorende bij de landnaam, zoals opgenomen in de Land/Gebied-tabel van de BRP.",

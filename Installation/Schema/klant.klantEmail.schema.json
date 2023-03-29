@@ -5,6 +5,11 @@
     "title": "KlantEmail",
     "type": "object",
     "properties": {
+        "id": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+        },
         "naam": {
             "type": "string",
             "description": "De naam van dit email",
