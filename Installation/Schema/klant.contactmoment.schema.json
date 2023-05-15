@@ -119,6 +119,10 @@
         },
         "todo": {
             "$ref": "https://klantenBundle.commonground.nu/klant.todo.schema.json"
+        },
+        "afdeling": {
+            "$ref": "https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json",
+            "nullable": true
         }
     }
 }
