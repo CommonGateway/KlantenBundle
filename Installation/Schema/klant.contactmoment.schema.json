@@ -1,7 +1,7 @@
 {
     "$id": "https://klantenBundle.commonground.nu/klant.contactmoment.schema.json",
     "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
-    "version": "0.2",
+    "version": "0.3",
     "title": "Contactmoment",
     "type": "object",
     "properties": {
@@ -119,6 +119,10 @@
         },
         "todo": {
             "$ref": "https://klantenBundle.commonground.nu/klant.todo.schema.json"
+        },
+        "afdeling": {
+            "$ref": "https://kissdevelopment.commonground.nu/kiss.afdelingsnaam.schema.json",
+            "nullable": true
         }
     }
 }
