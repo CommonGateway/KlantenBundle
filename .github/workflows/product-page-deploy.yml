@@ -14,7 +14,7 @@ env: # Change these to your preferences any image url can also be a base encoded
   SLACK_URL: "https://join.slack.com/t/conductionworkspace/shared_invite/zt-1y5kerime-amWEvljvnLvo5S3YfU_jzg"
   GITHUB_REPOSITORY_URL: ${{ github.event.repository.url }}
   # Jumbotron setup
-  JUMBOTRON_TITLE: Petstore bundle
+  JUMBOTRON_TITLE: KlantenBundle
   JUMBOTRON_SUBTITLE: "Product page"
   JUMBOTRON_DESCRIPTION: ${{ github.event.repository.description }}
   JUMBOTRON_SVG: "https://www.conduction.nl/wp-content/uploads/2021/07/cropped-Conduction_HOME_0000_afb1-1.png"
