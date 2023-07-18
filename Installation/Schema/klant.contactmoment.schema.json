@@ -47,7 +47,7 @@
         },
         "gespreksId": {
             "type": "string",
-            "format": "uud",
+            "format": "uuid",
             "default": "{{ generated_uuid() }}"
         },
         "kanaal": {
