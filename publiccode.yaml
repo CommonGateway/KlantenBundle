@@ -57,7 +57,7 @@ maintenance:
       until: 2035-01-01
       email: info\x64conduction.nl
       website: https://www.conduction.nl
-  contact:
+  contacts:
     - name: Ruben van der Linde
       email: info\x64conduction.nl
       phone: 085 303 6840
