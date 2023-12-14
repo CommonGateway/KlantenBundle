@@ -18,9 +18,9 @@ softwareType: softwareAddon
 description:
   en:
     localisedName: null
-    genericName: Symfony bundle for klanten api standard functionality
+    genericName: Symfony bundle for klanten api standard functionality.
     shortDescription: KlantenBundle
-    longDescription: null
+    longDescription: Symfony bundle for klanten api standard functionality.
     documentation: https://commongateway.github.io/KlantenBundle
     apiDocumentation: null
     features: []
@@ -29,9 +29,9 @@ description:
     awards: []
   nl:
     localisedName: null
-    genericName: Symfony bundle voor klanten api standaard functionaliteit
+    genericName: Symfony bundle voor klanten api standaard functionaliteit.
     shortDescription: KlantenBundle
-    longDescription: null
+    longDescription: Symfony bundle voor klanten api standaard functionaliteit.
     documentation: https://commongateway.github.io/KlantenBundle
     apiDocumentation: null
     features: []
