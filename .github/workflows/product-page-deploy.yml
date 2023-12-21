@@ -1,4 +1,4 @@
-name: My PublicCode Workflow
+name: My ProductPage & PublicCode Workflow
 
 on:
   push:
