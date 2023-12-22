@@ -1,0 +1,9 @@
+<?php
+return (object)[
+    'rootNamespace' => 'CommonGateway\KlantenBundle',
+    'destDirectory' => 'docs/classes',
+    'format' => 'github',
+    'classes' => [
+        '\CommonGateway\KlantenBundle\Service\InstallationService'
+    ],
+];
