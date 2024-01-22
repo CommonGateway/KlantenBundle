@@ -4,7 +4,7 @@
     "version": "0.1",
     "title": "Klant",
     "type": "object",
-    "nameProperties": ["klantnummer,voornaam,voorvoegselAchternaam,achternaam"],
+    "nameProperties": ["klantnummer","voornaam","voorvoegselAchternaam","achternaam"],
     "properties": {
         "id": {
             "type": "string",
